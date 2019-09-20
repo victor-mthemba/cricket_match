@@ -15,7 +15,7 @@ module.exports = function CricketScoreKeeper() {
                 if (type == "-") {
                     currentScore += 0;
                 } else if (type <= "6" && type >= "0") {
-                    currentScore += Number(type);
+                    currentScore += Number(type)
                 } else if (type == "w") {
                     numberOfWickets -= 1;
                 }
