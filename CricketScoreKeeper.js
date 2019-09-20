@@ -2,13 +2,13 @@ module.exports = function CricketScoreKeeper() {
 
     let currentScore = 0;
     let numberOfWickets = 10;
-    let totalScore = 0;
+    let totalScore = currentScore;
 
 
     function score(str) {
         let scoreList = str.split(",");
 
-        if(numberOfWickets > 0) {
+        if(numberOfWickets > 0 && totalScore <= 36) {
 
             for (let i = 0; i < scoreList.length; i++) {
                 const type = scoreList[i];
